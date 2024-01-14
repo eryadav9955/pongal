@@ -1,0 +1,65 @@
+body {
+    height: 105vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(pongal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.banner {
+    height: 100vh;
+}
+
+.banner:before {
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover ; 
+    top: 0;
+    left: 0;
+    background: url(SHOW.png);
+    animation: animate 10s linear infinite;
+    height: 100%;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 550px;
+    }
+}
+.bubble img{
+    width: 50%;
+    animation: bubble 15s linear infinite;
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:  ;
+    position: absolute;
+    bottom: -70;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translatex(100vh);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    } 
+    70%{
+        opacity: 1;
+    } 
+    100%{
+        transform: translateY(-50vh);
+        opacity: 0;
+    }
+}
